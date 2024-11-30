@@ -3703,8 +3703,6 @@ input, select, textarea {
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
-				opacity: 0.7; /* Slightly transparent */
-				transition: opacity 0.3s ease-in-out; /* Smooth transition */
 			}
 
 				#nav ul.links li a {
@@ -3725,7 +3723,6 @@ input, select, textarea {
 
 				#nav ul.links li.active {
 					background-color: #ffffff;
-					opacity: 1; /* Fully opaque for active tabs */
 				}
 
 					#nav ul.links li.active a {

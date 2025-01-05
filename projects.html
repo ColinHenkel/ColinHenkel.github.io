@@ -56,17 +56,29 @@
 							</ul>
 
 							<h3>Development skills:</h3>
-							<p>
-								<strong>Programming Languages:</strong> 
-								<code>C</code> | <code>C#</code> | <code>C++</code> | <code>Java</code> | 
-								<code>Kotlin</code> | <code>Python</code> | <code>SQL</code> | 
-								<code>PHP</code> | <code>JSON</code> | <code>JS</code>
-							</p>
-							<p>
-								<strong>Technologies:</strong> 
-								<code>AWS</code> | <code>Linux</code> | <code>MongoDB</code> | 
-								<code>MySQL</code> | <code>MariaDB</code> | <code>ReactJS</code>
-							</p>							
+
+							<a href="https://skillicons.dev">
+							  <img 
+								id="skills-icons" 
+								src="https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=8" 
+								alt="My Skills" 
+							  />
+							</a>
+							
+							<script>
+							  function updateIcons() {
+								const img = document.getElementById("skills-icons");
+								if (window.innerWidth <= 768) {
+								  img.src = "https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=4";
+								} else {
+								  img.src = "https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=8";
+								}
+							  }
+							
+							  // Initial call and update on resize
+							  updateIcons();
+							  window.addEventListener("resize", updateIcons);
+							</script>												
 						</section>
 
 						<!-- Posts -->

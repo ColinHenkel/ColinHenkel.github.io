@@ -4689,9 +4689,11 @@ input, select, textarea {
 	}
 
 	.skills-icons {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		gap: 8px;
+		margin: 0;
+		padding: 0;
 	  }
 	  
 	  .skills-icons svg {

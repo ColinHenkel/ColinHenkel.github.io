@@ -55,15 +55,30 @@
 								<li>Backend Development</li>
 							</ul>
 
-							<h3>⚙️ Development Skills:</h3>
+							<h3>⚙️ Development skills:</h3>
 
-							<!-- Programming Languages -->
 							<a href="https://skillicons.dev">
-								<img 
-								  src="https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=8" 
-								  alt="My Skills"
-								/>
-							  </a>						
+							  <img 
+								id="skills-icons" 
+								src="https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=8" 
+								alt="My Skills" 
+							  />
+							</a>
+							
+							<script>
+							  function updateIcons() {
+								const img = document.getElementById("skills-icons");
+								if (window.innerWidth <= 768) {
+								  img.src = "https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=4";
+								} else {
+								  img.src = "https://skillicons.dev/icons?i=c,cs,cpp,java,kotlin,python,php,js,ts,aws,azure,linux,mongodb,mysql,react,express&perline=8";
+								}
+							  }
+							
+							  // Initial call and update on resize
+							  updateIcons();
+							  window.addEventListener("resize", updateIcons);
+							</script>												
 						</section>
 
 						<!-- Posts -->

@@ -4688,7 +4688,7 @@ input, select, textarea {
 
 	}
 
-	/* .skills-icons {
+	.skills-icons {
 		display: flex;
 		align-items: center;
 		gap: 8px;
@@ -4701,4 +4701,4 @@ input, select, textarea {
 	  
 	  .skills-icons svg:hover {
 		transform: scale(1.1);
-	  }	   */
+	  }	  

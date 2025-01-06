@@ -3535,6 +3535,7 @@ input, select, textarea {
 			text-align: center;
 			width: 100%;
 			padding: 0;
+			letter-spacing: 0.025em;
 		}
 
 			#main > .posts > * {

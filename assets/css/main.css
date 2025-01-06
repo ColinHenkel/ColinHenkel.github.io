@@ -151,7 +151,8 @@ input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
 		font-weight: 300;
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 2;
+		letter-spacing: 0.025em;
 	}
 
 	a {
@@ -3562,6 +3563,7 @@ input, select, textarea {
 				border-style: solid;
 				border-top-width: 2px;
 				text-align: center;
+				letter-spacing: 0.025em;
 			}
 
 				#main > .posts > article > :last-child {

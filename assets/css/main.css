@@ -2242,6 +2242,9 @@ section,
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   margin-bottom: 30px;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .portfolio .portfolio-card:hover {
@@ -2303,6 +2306,7 @@ section,
 
 .portfolio .portfolio-card .portfolio-info {
   padding: 20px;
+  flex-grow: 1;
 }
 
 .portfolio .portfolio-card .portfolio-info h4 {
@@ -2847,4 +2851,51 @@ section,
 
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
+}
+
+/* Make columns stretch evenly */
+.row {
+  align-items: stretch;
+}
+
+/* Make each portfolio column a flex container */
+.portfolio-item {
+  display: flex;
+}
+
+/* Make the card fill full height */
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Let the text section expand */
+.portfolio-info {
+  flex-grow: 1;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* invisible track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25); /* subtle thumb */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
 }
